@@ -5,8 +5,37 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>month picker</title>
+	<style>
+		* {margin: 0; padding: 0;}
+		body {
+			padding: 60px 120px;
+		}
+		input {
+			-webkit-appearance: none;
+			display: inline-block;
+			padding: 0 16px;
+			width: 200px;
+			height: 50px;
+			font-size: 14px;
+			border-radius: 8px;
+			border: 1px solid #d0d0d0;
+			outline: none;
+			vertical-align: middle;
+			box-sizing: border-box;
+		}
+	</style>
 </head>
 <body>
-	
+	<input type="text" class="test">
+
+	<input type="text" class="test">
+
+	<script src="./monthPicker.js"></script>
+	<script>
+		new MonthPicker({
+			el: '.test',
+			bgColor: '#9d7d54'
+		});
+	</script>
 </body>
 </html>
